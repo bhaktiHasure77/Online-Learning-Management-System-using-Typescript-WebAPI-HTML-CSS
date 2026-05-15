@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./NavCatFoot.css">
+    <link rel="stylesheet" href="./card.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    
+   <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bed4cb;
+    font-family: Verdana;
+}
+
+/* PAGE TITLE */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #1b2a2c;
+}
+
+/* MAIN CONTAINER */
+.container {
+    margin: 50px auto;
+    padding: 35px;
+    width: 600px;
+    
+    background-color: #4a7fa7;
+    display: flex;
+    gap: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+/* FORM SECTION */
+.user {
+    /* display: flex; */
+    margin-left: 20px;
+    flex-direction: column;
+    gap: 20x;
+    align-items: start;
+}
+
+/* EACH ROW */
+.field {
+    display: grid;
+    grid-template-columns: 160px 300px; /* reduced input width */
+    align-items: center;
+    column-gap: 20px;
+    margin:5px;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: #b3cfe5;
+}
+
+/* LABEL */
+.field label {
+    text-align: left;
+    font-weight: bold;
+    color: #1f2d2f;
+    padding: 8px;
+    background-color: #b3cfe5;
+    border-radius: 4px;
+}
+
+/* INPUTS */
+.field input,
+.field select,
+.field textarea {
+    padding: 8px;
+    border: 2px solid #3f3f3f;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    /* background-color: #f0f7f6; */
+    width: 100%;
+}
+
+/* FOCUS EFFECT */
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #2f5f66;
+    box-shadow: 0 0 5px rgba(47, 95, 102, 0.5);
+}
+
+/* BUTTON CONTAINER */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+    width: 100%;
+    
+}
+
+/* BUTTONS */
+button {
+    background-color: #8ca9c0;
+    padding: 17px;
+    /* border: none; */
+    border: 2px ;
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #b3cfe5;
+    color: #000000;
+
+}
+</style>
+
+</head>
+<body>
+    <div class="navbar"></div>
+
+    <div class="main">
+            <h2>User Details Manager</h2>
+            <div class="container">
+                <div class="user">
+                    <div class="field">
+                        <label>User ID:</label>
+                        <select id="ddlUserID"></select>
+                    </div>
+
+                    <div class="field">
+                        <label>User Name:</label>
+                        <input type="text" id="txtName" required>
+                    </div>
+
+                    <div class="field">
+                        <label>User Role:</label>
+                        <select id="ddlCategory" required></select>
+                    </div>
+
+                    <div class="field">
+                        <label>User Email:</label>
+                        <input type="text" id="txtEmail" required>
+                    </div>
+
+                    <div class="field">
+                        <label>Password:</label>
+                        <input type="text" id="txtPass" required>
+                    </div>
+
+                    <div class="buttons" style="margin: 20px; display: flexbox;">
+                        
+                        <button  type="button" onclick="deleteUser()" >Delete User</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+
+</body>
+<script src="../Script/NavFoot.js"></script>
+<script src="../Script/User.js"></script>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Corner : Sign in</title>
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        background-color: #b3cfe5;
+        text-align: center;
+        font-family: "Georgia", serif;
+      }
+      .log-container {
+        width: 900px;
+        height: 500px;
+        padding: 50px;
+        margin: 70px 220px;
+        background-color: #4a7fa7;
+        border: 2px solid #5785a8;
+        border-radius: 50px;
+        /* position: fixed; */
+        display: flex;
+        box-shadow: 0 4px 8px rgba(46, 79, 151, 0.427);
+      }
+      .logo{
+        margin: 100px 0px 100px 100px;
+      }
+  
+      label {
+        font-size: 110%;
+        color: rgb(0, 0, 0);
+      }
+      .input {
+        margin: 3px;
+        padding-top: 1.5%;
+        padding-left: 6%;
+        font-size: 100%;
+       
+        border: #b3cfe5 solid 2px;
+      }
+
+      div h1 {
+        margin-top: 0px;
+      }
+      .form-box {
+        margin: 40px;       
+      }
+      button {
+        background-color: #b3cfe5;
+        padding: 10px 20px;
+        border: #050505 solid 2px;
+        border-radius: 10px;
+        font-size: medium;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .login-link {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .login-link a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="log-container">
+        <div class="logo">
+           <h1>CORAL ACADEMY</h1>
+         </div>
+         <div class="form-box">
+               <div style="margin-top:-35px" >
+                 <h1
+                   style="
+                     font-family: &quot;Verdana&quot;;
+                     color: black;
+                     font-size: 250%;
+                     padding: 10px;
+                   ">
+                   New User Account
+                 </h1>
+               </div>
+               <div>
+                  <form action="" id="signupForm">
+                   <div style="margin-top: 1%">
+                    <label>Register as:</label><br />
+                    <input type="radio" name="role" value="3" id="roleStudent" checked />
+                    <label for="roleStudent" style="font-size: 90%">Student</label>
+                    <input type="radio" name="role" value="2" id="roleInstructor" />
+                    <label for="roleInstructor" style="font-size: 90%">Instructor</label>
+                  </div>
+                    <div style="margin-top: 1%">
+                      <label >Email</label><br />
+                      <input class="input" type="email" id="email" required /><br />
+                    </div>
+
+                    <div style="margin-top: 1%">
+                      <label >Name </label><br />
+                      <input class="input"  type="text" id="name" /><br />
+                    </div>
+                
+                    <div style="margin-top: 1%">
+                      <label >Password </label><br />
+                      <input
+                        class="input"
+                        type="password"
+                        id="pass"
+                        required
+                      /><br />
+                    </div>
+                    <div style="margin-top: 1%">
+                      <label> Confirm Password </label><br />
+                      <input
+                        class="input"
+                        type="password"
+                        id="pass2"
+                        required
+                      /><br /><br />
+                    </div>
+                    <div>
+                      <button class="button-sign" type="button" onclick="SignUp()">Sign up</button>
+                    </div>
+                    <div class="login-link">
+                      Already have an account? <a href="LoginPage.html">Login</a>
+                    </div>
+                  </form>
+                </div>
+          </div>
+    </div>
+  </body>
+  <script src="../Script/SignUp.js"></script>
+</html>

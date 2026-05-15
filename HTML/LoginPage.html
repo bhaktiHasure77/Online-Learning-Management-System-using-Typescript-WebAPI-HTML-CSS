@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginPage</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        background-color: #b3cfe5;
+        text-align: center;
+          font-family: "Georgia", serif;
+
+      }
+      .log-container {
+        /* width: auto; */
+        margin: 120px 220px;
+        background-color: #4a7fa7;
+        border: 2px solid #5785a8;
+        border-radius: 50px;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .logo{
+        margin: 100px 0px 100px 100px;
+      }
+     
+      .input {
+        margin: 10px;
+        padding-top: 1.5%;
+        padding-left: 6%;
+        font-size: 100%;
+
+        border: #b3cfe5 solid 2px;
+      }
+      label {
+        font-size: 110%;
+        color: rgb(0, 0, 0);
+      }
+      .signUp-link {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .signUp-link a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .signUp-link a:hover {
+        text-decoration: underline;
+      }
+      button {
+        height: 45px;
+        width: 100px;
+        background-color: #b3cfe5;
+        padding: 10px 20px;
+        border: #050505 solid 2px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: medium;
+        font-weight: bold;
+      }
+      .form-box {
+        margin: 50px;
+        
+      }
+
+      .input:focus {
+        border-color: #4a7fa7;
+      }
+    </style>
+
+<!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="log-container">
+      <div class="logo">
+        <h1>CORAL <br> ACADEMY</h1>
+      </div>
+      <div class="form-box">
+        <div style="margin-top: -35px">
+          <h1
+            style="
+              font-family: &quot;Verdana&quot;;
+              color: black;
+              font-size: 300%;
+              padding: 1%;
+            "
+          >
+            Login
+          </h1>
+        </div>
+
+        <main>
+          <form action="" id="loginForm">
+            <div style="margin-top: 1.5%">
+              <label style="font-size: 150%; color: rgb(0, 0, 0)"
+                >Email :<br
+              /></label>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div style="margin-top: 1.5%">
+              <label style="font-size: 150%; color: rgb(0, 0, 0)"
+                >Password : <br/>
+            </label>
+              <input
+                class="input"
+                type="password"
+                id="pass"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div style="margin-top: 1.5%">
+              <p>
+                <input type="checkbox" required />By checking on box,<br />
+                I accept the Terms & Conditions & Privacy Policy
+              </p>
+              <button  type="button" onclick="Login()">LogIn</button>
+            </div>
+            <br />
+            <div class="signUp-link">
+              <a href="">forgot password?</a>/new user?<a href="./SignUp.html"
+                >Create account</a
+              >
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+    <!-- <script src="./JS/func.js"></script> -->
+
+  <script src="../SCript/Login.js"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    
+
+    <link rel="stylesheet" href="./NavCatFoot.css">
+    <link rel="stylesheet" href="./card.css">
+    <style>
+      .paycard{
+        height:400px;
+        width: 400px;
+        background-color: #d4cbc3;
+        
+      }
+      .fa-bag-shopping{
+        display: none;
+      }
+    </style>
+    
+</head>
+<body>
+     <!-- navbar -->
+     <nav class="navbar"></nav>
+    <div style=" background-color: #b3cfe5;text-align: center; padding: 40px;">
+     <main >
+        <h1 style="color: rgb(0, 0, 0); margin: 40px; text-align: center;">
+             Products Added in Your Cart
+        </h1>
+        <div id="cart-container" class="card">
+        </div>
+        <div id="total-bill-container" style="
+        background-color: #222; 
+        color: white; 
+        text-align: center; 
+        padding: 20px; 
+        font-size: 22px; 
+        font-weight: bold; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        width: 50%; 
+        margin: 30px auto; 
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    ">
+        <span>Total Bill:</span>
+        <span id="total-bill" style="font-weight: bold;">₹0.00</span>
+    </div>
+    
+    <div style="text-align: center; margin: 40px;">
+        <button id="buy-now"  type="button" onclick="cartMgr.checkLoginAndProceed()" style="
+    background-color:#fdf8f2 ;
+            color: #000000; 
+            font-size: 18px; 
+            padding: 10px 20px; 
+            border: none; 
+            cursor: pointer; 
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        ">Proceed to Payment</button>
+    </div>
+    </main>
+    </div>
+    
+    <div class="footer"></div>
+   
+</body>
+<script src="../Script/NavFoot.js"></script>
+<script src="../Script/func.js"></script>
+<script src="../Script/cart.js"></script>
+
+</html>

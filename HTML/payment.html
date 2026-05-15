@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+   
+   <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b3cfe5;
+    /* fdf8f2; */
+      font-family: "Georgia", serif;
+    text-align: center;
+    
+}
+
+/* PAGE TITLE */
+h2 {
+    /* text-align: center; */
+    margin-top: 20px;
+    color: #1b2a2c;
+}
+
+/* MAIN CONTAINER */
+.container {
+ margin: 90px 200px 80px 400px;
+     padding: 35px;
+    width: 540px;
+    
+    background-color: #4a7fa7;
+    display: block;
+    /* gap: 50px; */
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+/* EACH ROW */
+.field {
+    display: grid;
+    grid-template-columns: 160px 300px; /* reduced input width */
+    align-items: center;
+    column-gap: 20px;
+    padding: 8px;
+    margin: 3px;
+    border: 2px ;
+    border-radius: 6px;
+    background-color: #b3cfe5;
+}
+
+/* LABEL */
+.field label {
+    text-align: left;
+    font-weight: bold;
+    color: #1f2d2f;
+    padding: 8px;
+    background-color: #b3cfe5;
+    border-radius: 4px;
+}
+
+/* INPUTS */
+.field input,
+.field select,
+.field textarea {
+    padding: 8px;
+    border: 2px solid #3f3f3f;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    /* background-color: #b3cfe5; */
+    width: 100%;
+}
+
+/* FOCUS EFFECT */
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #2f5f66;
+    box-shadow: 0 0 5px rgba(47, 95, 102, 0.5);
+}
+
+
+
+/* BUTTONS */
+button {
+    margin: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #b3cfe5;
+    padding: 17px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #fdf8f2;
+    color: #000000;
+}
+ a{
+    text-decoration: none;
+    color:#000000 ;
+
+}
+a:hover {
+    color: #000000;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Payment</h2>
+        <div class="pay">
+        <div class="field">
+            <label>Card Number:</label> 
+            <input id="txtCardNo" type="text" placeholder="Card Number" required>
+        </div>
+        <div class="field">
+            <label>Card Holder Name:</label> 
+            <input id="txtName" type="text" placeholder="Holder's Name" required>
+        </div>
+        <div class="field">
+            <label>Mobile Number:</label> 
+            <input id="txtMobNo" type="text" placeholder="Mobile Number" required>
+        </div>
+        <div class="field">
+            <label>CVV:</label> 
+            <input id="txtCVV" type="password" placeholder="CVV" required>
+        </div>
+        <div>
+            <button><a href="./Cart.html">Cancle</a></button>
+            <button type="button" onclick="cartMgr.processPayment()">Confirm</button>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="../Script/cart.js"></script>
+<script src="../Script/func.js"></script>
+</html>

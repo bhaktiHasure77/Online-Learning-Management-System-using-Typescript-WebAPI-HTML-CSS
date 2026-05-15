@@ -1,0 +1,253 @@
+*{
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+  font-family: "Georgia", serif;
+  
+
+}
+.navdiv{
+
+    position: sticky;
+    top:0%;
+    z-index: 10001;
+    background-color: #4a7fa7;
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+   display: flex;
+   /* border-bottom:2px solid #7aa5aa; */
+   justify-content: space-evenly;
+}
+.logo{
+    margin-top:35px;
+    margin-right: 5px;
+}
+/* .logo h3{
+  margin-right: auto;
+} */
+.navdiv a{
+   text-decoration: none;
+    font:normal normal bold 17px 'Georgia';
+    color: black;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+li{
+    margin: 50px 30px 30px 40px;
+
+} 
+li:hover{
+    font:normal normal bolder 26px 'Verdana';
+    text-decoration: underline ;
+    
+}
+.icon{
+    font:normal normal bold 19px 'Verdana';
+    color: black;
+    margin-top: 50px ; 
+    display:flex;
+    gap: 70px;
+}
+
+.icon:hover{
+    font:normal normal bolder 30px 'Verdana' ;
+}
+ li a{
+    text-decoration: none;    
+ }
+   #intro{
+  
+  background-color: #b3cfe5;
+    margin-top:120px ;
+    width: 100%48 ;
+    height: 750px;
+}
+.intro1{
+  position: relative;
+}
+ 
+.intro2{
+  position: absolute;
+  font-size: larger;
+  top: 200px;
+  right: 200px;
+}
+.intro2 button{
+  margin-top: 50px;
+  margin-left: 10px;
+  color: #ffffff;
+  font-family: "Georgia", serif;
+  font-size: large;
+  background-color: #4a7fa7;
+  height: 80px;
+  width: 150px;
+  border: #000000 solid 2px;
+  border-radius: 20px;
+}
+ .brands{
+  margin-top: 0%;
+  padding: 60px;
+  height: 500px;
+  background-color: #b3cfe5;
+  width:100% ;
+ }
+
+ .brandLogo {
+
+  display: inline-block;
+  margin: 60px;
+  align-items: center;
+  margin-left: 150px;
+ }
+
+.brandLogo img{
+  border: #000000 solid 2px;
+}
+
+.brandLogo img :hover{
+ box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.788);
+}
+
+.brandLogo h3{
+  align-items: center;
+}
+
+ .imge{
+height: 200px;
+/* color: #000000d9; */
+ }
+
+ .imge img{
+    display: inline-block; 
+    margin: 5px 5px 0px 5px; 
+    object-fit: cover; 
+    width: 150px; 
+    height: 150px; 
+    border: 2px solid #484848f2; 
+    border-radius: 5px; 
+}
+.imge:hover {
+    height: 220px;
+  background-color: #4a7fa7;
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px #000000; 
+  border-radius: 5px;
+ }
+
+.imgname{
+    margin: 25px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+  color: #000000;
+  /* text-shadow:  0 4px 8px #242222fb; */
+
+}
+
+.footer-container {
+    margin: 0%;
+  height: 290px;
+  /* padding: 0 40px; */
+background-color: #4a7fa7;
+margin-top: -30px;
+
+}
+.footer-container a{
+  text-decoration: none;
+}
+/* .footer-wrapper {
+  /* flex: 1; 
+  top: 50px;
+  position: absolute;
+  left: 40px;
+  right: 20px;
+  margin-left: 70px;
+
+} */
+.Icon{
+  margin-left:10px ;
+  /* gap: 20px */
+}
+.Icon a{
+  margin: 10px;
+}
+.flex-wrapper {
+  top: 60px;
+
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  /* gap: 30px; */
+  position: relative;
+  margin-left: 70px;
+
+}
+.flex-wrapper ul li {
+  margin: 0.5rem 0;
+}
+.footer-list { 
+   display: inline-flexbox;
+  /* position: relative; */
+     justify-content: center;
+    
+  margin-left: 70px;
+
+
+}
+.footer-list h3 {
+  /* display: block; */
+  margin-left: 100px;
+/* top: 30px; */
+  font-size: 18px;
+  color: #000000
+}
+
+.footer-list ul{
+  margin-top: 30px;
+  margin-left: 70px;
+ gap: 50px;
+    /* display: inline; */
+}
+
+
+.footer-link {
+  color: black;
+  font-size: 14px;
+}
+.footer-link :hover {
+  color: #000000;
+  font-size: medium;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.dropdown {
+
+  display: none;
+  position: absolute;
+  background-color: #b3cfe5;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+li:hover .dropdown {
+  display: block;
+ box-shadow: 0 4px 8px #000000; 
+  border: #0000004b 1px solid;
+}
+.dropdown table{
+ border-collapse: collapse;
+  padding:20px;
+}
+.dropdown td a{
+   font-size: small;
+  margin: 12px;
+  padding: 10px;
+}
+.dropdown td :hover{
+
+  font-size: medium;
+}
